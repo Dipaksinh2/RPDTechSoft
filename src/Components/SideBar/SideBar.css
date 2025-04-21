@@ -1,0 +1,125 @@
+:root {
+  --sidebar-bg: #ffffff; /* light background */
+  --sidebar-text: #ffffff;
+  --sidebar-hover: #e3e7eb;
+  --sidebar-border: #dce1e7;
+}
+
+body.dark-mode {
+  --sidebar-bg: #1f1f1f;
+  --sidebar-text: #f5f5f5;
+  --sidebar-hover: #333333;
+  --sidebar-border: #2a2a2a;
+}
+
+.sidebar {
+  width: 100px;
+  height: 100vh;
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  border-right: 1px solid var(--sidebar-border);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.04);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.sidebar-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--sidebar-text);
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: var(--sidebar-text);
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.sidebar-link:hover {
+  background-color: var(--sidebar-hover);
+  color: #172b4b;
+}
+
+.logo {
+  height: 15vmin;
+  pointer-events: fill;
+}
+
+:root {
+  --topbar-bg: #ffffff;
+  --topbar-text: #ffffff;
+  --topbar-hover: #155ba1;
+  --topbar-border: #dce1e7;
+}
+
+body.dark-mode {
+  --topbar-bg: #1f1f1f;
+  --topbar-text: #f5f5f5;
+  --topbar-hover: #333333;
+  --topbar-border: #2a2a2a;
+}
+.topbar-logo-name {
+  background-color: var(--sidebar-border);
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.topbar {
+  height: 70px;
+  background-color: var(--topbar-bg);
+  color: var(--topbar-text);
+  border-bottom: 3px solid var(--topbar-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  font-family: "Segoe UI", sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.topbar-left {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.topbar-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.topbar-link {
+  background-color: var(--sidebar-border);
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.topbar-link:hover {
+  background-color: var(--topbar-hover);
+  color: #ffffff;
+  font-weight: 600;
+}
