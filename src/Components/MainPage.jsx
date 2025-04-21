@@ -2,7 +2,8 @@ import React from "react";
 import logo from "../LogoImage.png";
 import "../App.css";
 import { useNavigate } from "react-router-dom";
-
+import Button from "@mui/material/Button";
+import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined";
 const MainPage = () => {
   const navigate = useNavigate();
 
@@ -15,14 +16,13 @@ const MainPage = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div>
-          <button
-            type="button"
-            className="mainPage-button-oneui"
-            name="mainPageBtn"
+          {/* <Button variant="contained" color="default"> */}
+          <ArrowCircleRightOutlinedIcon
+            color="secondary"
             onClick={triggerMainPage}
-          >
-            Main Page
-          </button>
+            className="mainPage-button-oneui"
+          />
+          {/* </Button> */}
         </div>
       </header>
     </div>
